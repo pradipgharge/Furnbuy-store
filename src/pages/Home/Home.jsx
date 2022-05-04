@@ -22,7 +22,7 @@ const Home = () => {
               <div className="banner-img">
                 <img
                   className="img-responsive"
-                  src={bannerOne}
+                  src={chair}
                   alt="banner image"
                 />
               </div>
