@@ -1,0 +1,77 @@
+.header {
+  background-color: var(--solid-black-color);
+  padding: 1rem 0;
+}
+
+.header-title {
+  font-size: 1.8rem;
+  font-weight: 400;
+  padding: 6px 0;
+  color: var(--tertiary-text-color);
+}
+
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+}
+
+.header-pills {
+  font-size: 1.4rem;
+  color: var(--tertiary-text-color);
+}
+
+/* search-bar styling */
+.search-bar {
+  display: flex;
+  border: 1px var(--solid-black-color);
+  width: 28rem;
+  padding: 0.4rem;
+  border-radius: 1rem;
+  background-color: var(--tertiary-text-color);
+  gap: 1.1rem;
+}
+
+.search-bar-icon {
+  border: none;
+  background: none;
+  padding-left: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-bar-input {
+  border: none;
+  outline: none;
+  font-size: 1.1rem;
+  width: 100%;
+}
+
+.navbar-right {
+  padding: 0 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+}
+
+.badge {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bd-count {
+  min-height: 12px;
+  min-width: 12px;
+  top: -2px;
+  right: -5px;
+}

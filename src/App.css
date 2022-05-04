@@ -1,1 +1,58 @@
+@import url(https://linearui.netlify.app/css/main.css);
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --ecom-bg-color: #f1f2f7;
+  --checkoutbox-bg-color: #cce5eb;
+  --light-black-color: #212020;
+  --light-cyan-color: #78ecc5;
+  accent-color: var(--solid-black-color);
+}
+
+body {
+  background-color: var(--ecom-bg-color);
+}
+
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.container-2 {
+  width: 95%;
+  margin: auto;
+}
+
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.btn-solid-primary {
+  background-color: var(--solid-black-color);
+  color: var(--tertiary-text-color);
+}
+
+.btn-solid-primary:hover {
+  background-color: var(--light-yellow-color);
+  color: var(--solid-black-color);
+  border: 1px solid var(--solid-black-color);
+}
+
+.icon {
+  font-size: 1.5rem;
+  color: var(--tertiary-text-color);
+  transition: all 0.3s ease-in;
+}
+
+.icon:hover {
+  transform: scale(0.9);
+}
