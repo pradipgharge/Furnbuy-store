@@ -22,7 +22,7 @@ const Home = () => {
               <div className="banner-img">
                 <img
                   className="img-responsive"
-                  src="https://www.cdc.gov/healthypets/images/pets/cute-dog-headshot.jpg?_=42445"
+                  src={bannerOne}
                   alt="banner image"
                 />
               </div>
