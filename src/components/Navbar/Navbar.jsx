@@ -1,19 +1,20 @@
 import "./Navbar.css";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
     <header className="header">
       <nav className="navbar container-2">
         <div>
-          <a href="/index.html">
+          <Link to="/">
             <span className="header-title">Furnbuy</span>
-          </a>
+          </Link>
         </div>
         <ul className="navbar-left">
           <li>
-            <a href="/">
+            <Link to="/products">
               <span className="header-pills">Products</span>
-            </a>
+            </Link>
           </li>
           <li className="search-bar">
             <span className="search-bar-icon">
@@ -28,27 +29,27 @@ const Navbar = () => {
         </ul>
         <ul className="navbar-right">
           <li>
-            <a href="/">
+            <Link to="/">
               <div>
                 <i className="fas fa-user-xmark icon" />
               </div>
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="/">
+            <Link to="/">
               <div className="badge bd-sm">
                 <i className="fas fa-heart icon" />
                 <span className="bd-count">2</span>
               </div>
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="/">
+            <Link to="/">
               <div className="badge bd-sm">
                 <i className="fas fa-shopping-cart icon" />
                 <span className="bd-count">3</span>
               </div>
-            </a>
+            </Link>
           </li>
         </ul>
       </nav>
