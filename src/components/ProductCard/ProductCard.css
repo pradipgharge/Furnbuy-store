@@ -1,0 +1,60 @@
+.btn-wishlist {
+  transition: all ease-in 0.2s;
+  font-size: 1.2rem;
+}
+
+.btn-wishlist:hover {
+  transform: scale(1.15);
+}
+
+.card-bdg {
+  top: 10px;
+  left: 10px;
+  font-size: 12px;
+  background-color: var(--checkoutbox-bg-color);
+  color: var(--solid-black-color);
+  padding: 4px 8px;
+  position: static;
+}
+
+.card-text-content {
+  padding: 8px 10px;
+}
+
+.card-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 0.5rem 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-subtitle {
+  opacity: 1;
+  font-size: 1rem;
+  font-weight: 500;
+  margin: 0.5rem 0;
+}
+
+.card-pricing {
+  gap: 12px;
+  margin: 0.6rem 0 0 0;
+}
+
+.card-pricing p {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.card-footer {
+  justify-content: center;
+  padding: 10px;
+  background-color: var(--checkoutbox-bg-color);
+}
+
+.btn-icon {
+  width: 100%;
+  gap: 8px;
+  padding: 0.6rem;
+  justify-content: center;
+}
