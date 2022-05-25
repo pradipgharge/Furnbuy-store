@@ -36,7 +36,7 @@ const ProductListing = () => {
       </h2>
       <div className="product-card-container">
         {productState.data.map((product) => (
-          <ProductCard product={product} />
+          <ProductCard product={product} key={product._id} />
         ))}
       </div>
     </div>

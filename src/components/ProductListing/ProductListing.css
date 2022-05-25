@@ -1,7 +1,6 @@
 .products-container {
   display: flex;
   flex-direction: column;
-  /* justify-content: space-between; */
   margin-left: 18.75rem;
   gap: 1.4rem;
   padding: 1.5rem 2rem;
