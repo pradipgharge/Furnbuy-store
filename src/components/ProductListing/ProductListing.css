@@ -1,0 +1,21 @@
+.products-container {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  margin-left: 18.75rem;
+  gap: 1.4rem;
+  padding: 1.5rem 2rem;
+  height: 100vh;
+}
+
+.products-heading {
+  padding-left: 1.9rem;
+  font-weight: 500;
+}
+
+.product-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 2rem;
+}
