@@ -1,6 +1,5 @@
 import "./Home.css";
-import { Navbar } from "../../components/Navbar/Navbar";
-import { Footer } from "../../components/Footer/Footer";
+import { Navbar, Footer } from "../../components";
 import {
   bannerOne,
   bannerTwo,
@@ -14,7 +13,9 @@ import {
 const Home = () => {
   return (
     <div className="page-wrapper">
-      <Navbar />
+      <header className="header">
+        <Navbar />
+      </header>
       <section className="homepage-container">
         <main className="hero-container container-2">
           <div className="banner-section">

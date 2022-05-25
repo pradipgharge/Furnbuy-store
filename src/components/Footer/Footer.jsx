@@ -4,7 +4,7 @@ const Footer = () => {
     <footer className="footer">
       <div className="footer-container">
         <div className="footer-column">
-          <h4 className="footer-col-heading">Our Company</h4>
+          <h4 className="footer-column-heading">Our Company</h4>
           <ul className="footer-list">
             <li className="footer-list-item">About Us</li>
             <li className="footer-list-item">Career</li>
@@ -22,7 +22,7 @@ const Footer = () => {
           </ul>
         </div>
         <div className="footer-column">
-          <h4 className="footer-col-heading">Useful Links</h4>
+          <h4 className="footer-column-heading">Useful Links</h4>
           <ul className="footer-list">
             <li className="footer-list-item">Help Center</li>
             <li className="footer-list-item">Address</li>
@@ -31,7 +31,7 @@ const Footer = () => {
           </ul>
         </div>
         <div className="footer-column">
-          <h4 className="footer-col-heading">Follow Us</h4>
+          <h4 className="footer-column-heading">Follow Us</h4>
           <div className="social-links">
             <a href="https://twitter.com/pradipgharge" target="_blank">
               <i className="fa-brands fa-twitter" />
