@@ -2,10 +2,34 @@ import "./ProductListing.css";
 import { ProductCard } from "../ProductCard/ProductCard";
 import { useProduct } from "../../context/product-context";
 import { useEffect } from "react";
+import { actionTypes } from "../../constants/actionTypes";
 import axios from "axios";
+import {
+  getSortedProducts,
+  getCategorizedProducts,
+  getPriceRangedProducts,
+  getRatedProducts,
+} from "../../utilities/productFilters/index";
+
+const { LOAD_DATA } = actionTypes;
 
 const ProductListing = () => {
   const { productState, productDispatch } = useProduct();
+
+  const pricedProducts = getPriceRangedProducts(
+    productState.data,
+    productState.price
+  );
+  const ratedProducts = getRatedProducts(pricedProducts, productState.rating);
+  const categorizedProducts = getCategorizedProducts(
+    ratedProducts,
+    productState.categories
+  );
+  const sortedProducts = getSortedProducts(
+    categorizedProducts,
+    productState.sortBy
+  );
+
   useEffect(() => {
     (async () => {
       try {
@@ -19,7 +43,7 @@ const ProductListing = () => {
           }));
 
           productDispatch({
-            type: "LOAD_DATA",
+            type: LOAD_DATA,
             payload: products,
           });
         }
@@ -32,10 +56,10 @@ const ProductListing = () => {
   return (
     <div className="products-container">
       <h2 className="products-heading">
-        Showing All Products ({productState.data.length})
+        Showing All Products ({sortedProducts.length})
       </h2>
       <div className="product-card-container">
-        {productState.data.map((product) => (
+        {sortedProducts.map((product) => (
           <ProductCard product={product} key={product._id} />
         ))}
       </div>

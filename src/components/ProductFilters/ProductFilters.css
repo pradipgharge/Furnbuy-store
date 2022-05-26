@@ -1,0 +1,65 @@
+/* Sidebar styling */
+.filter-container {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 67px;
+  left: 0;
+  width: 18.75rem;
+  height: 100%;
+  padding: 1.5rem;
+  background-color: var(--checkoutbox-bg-color);
+  gap: 1rem;
+}
+
+.filter-header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.1rem;
+  font-weight: 500;
+  align-items: center;
+}
+
+.filter-header .btn-link-primary {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.filter-body {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.filter-type {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.filter-type-heading {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.filter-type input {
+  cursor: pointer;
+}
+
+.price-range {
+  display: flex;
+  justify-content: space-between;
+}
+
+hr {
+  height: 1px;
+  background-color: var(--solid-black-color);
+  border: none;
+}
+
+datalist {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  font-size: 1rem;
+}

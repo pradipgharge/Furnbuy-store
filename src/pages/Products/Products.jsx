@@ -1,6 +1,6 @@
 import "./Products.css";
 import { Navbar } from "../../components/Navbar/Navbar";
-import { ProductListing } from "../../components";
+import { ProductFilters, ProductListing } from "../../components";
 const Products = () => {
   return (
     <div className="page-wrapper">
@@ -8,6 +8,7 @@ const Products = () => {
         <Navbar />
       </header>
       <section className="product-home-container">
+        <ProductFilters />
         <ProductListing />
       </section>
     </div>
