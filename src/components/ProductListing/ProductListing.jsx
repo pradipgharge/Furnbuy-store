@@ -24,10 +24,6 @@ const ProductListing = () => {
   const categorizedProducts = getCategorizedProducts(
     ratedProducts,
     productState.categories
-    // productState.categories.category1,
-    // productState.categories.category2,
-    // productState.categories.category3,
-    // productState.categories.category4
   );
   const sortedProducts = getSortedProducts(
     categorizedProducts,
